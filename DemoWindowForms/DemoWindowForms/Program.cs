@@ -16,7 +16,10 @@ namespace DemoWindowForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //Här styrs vilket formulär som ska instansieras (new)
             Application.Run(new Form1());
+
         }
     }
 }
