@@ -15,6 +15,13 @@ namespace DemoWindowForms
         public Red()
         {
             InitializeComponent();
+
+            button1.Text = "Close me";
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
