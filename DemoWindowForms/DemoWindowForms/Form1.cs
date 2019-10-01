@@ -25,13 +25,22 @@ namespace DemoWindowForms
             //Red pill
             Red MyRedForm = new Red();
             MyRedForm.Text = "This is my Red form";
+            MyRedForm.BackColor = Color.Red;
+            MyRedForm.Width = 400;
+            MyRedForm.Height = 200;
 
             MyRedForm.ShowDialog();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Blue MyBlueForm = new Blue() { Text = "My Blue form" };
+            Blue MyBlueForm = new Blue() {
+                                            Text = "My Blue form",
+                                            BackColor = Color.Blue,
+                                            Width=400,
+                                            Height=200
+            };
+
             MyBlueForm.ShowDialog();
         }
     }
